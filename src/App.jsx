@@ -9,7 +9,7 @@ import Contact from "./components/contact";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FloatButton } from "antd";
-import StarsCanvas from "./canvas/Stars";
+import StarsCanvas from "./components/canvas/Stars";
 
 const App = () => {
   useEffect(() => {
