@@ -44,7 +44,7 @@ const CertificationCard = ({
 
 const Certification = () => {
   return (
-    <div className={`mt-12 bg-[#111111] rounded-[20px]`}>
+    <div className={`mt-12 bg-[#100d25] rounded-[20px]`}>
       <div
         className={`bg-[#151030] rounded-2xl ${styles.padding} min-h-[300px]`}
       >
