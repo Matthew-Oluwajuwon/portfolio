@@ -4,18 +4,19 @@ import office from "../images/office.svg";
 import calendar from "../images/calendar.svg";
 import { motion } from "framer-motion";
 import { staggeredChildren, staggeredListMotion } from "../utils/motion";
-import { education } from "../utils/constants";
+import { education, services } from "../utils/constants";
+import ServiceCard from "./Services";
 
 const About = () => {
 
   return (
     <div
-      className="lg:w-[60%] mt-10 px-2 xl:px-36 3xl:ml-36"
+      className="mt-10 px-2 xl:px-36 3xl:ml-36"
       id="about"
-      // data-aos="fade-up"
+      data-aos="fade-up"
       data-aos-anchor="#about"
     >
-      <div>
+      <div className="lg:w-[60%]">
         <h1 className="text-[#42446E] text-[2.5rem] font-bold font-[poppins-extrabold]">
           About me
         </h1>
@@ -31,13 +32,18 @@ const About = () => {
           user-friendly interfaces, ensuring an exceptional user experience.
         </p>
       </div>
-      <div className="mt-10">
+      <div className="mt-20 grid lg:flex gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
+      <div className="mt-10 lg:w-[60%]">
         <h1 className="text-[#42446E] text-[2.5rem] font-bold mb-7 font-[poppins-extrabold]">
           Education
         </h1>
         <motion.div
           className="grid gap-5"
-          variants={staggeredListMotion()}
+          variants={staggeredListMotion()} 
           initial="hidden"
           animate="visible"
         >

@@ -10,6 +10,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { FloatButton } from "antd";
 import StarsCanvas from "./components/canvas/Stars";
+import Certification from "./components/Certification";
 
 const App = () => {
   useEffect(() => {
@@ -19,15 +20,7 @@ const App = () => {
   return (
     <ConfigProvider
       theme={{
-        token: { colorPrimary: "#050816" },
-        components: {
-          Anchor: {
-            fontSize: 17,
-            lineType: "",
-            padding: 50,
-            paddingXXS: 20,
-          },
-        },
+        token: { colorPrimary: "#050816" }
       }}
     >
       <div className=" bg-[#050816] text-white">
@@ -38,11 +31,12 @@ const App = () => {
           <About />
           <Stack />
           <Experience />
+          <Certification />
           <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
         </div>
-      </div>
+      </div> 
       <FloatButton.BackTop />
     </ConfigProvider>
   );

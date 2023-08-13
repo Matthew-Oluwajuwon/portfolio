@@ -34,14 +34,6 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        {/* <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        > */}
         <span className="flex items-center gap-2">
           
         <img src={Logo} alt='logo' className='w-10 h-10 object-contain bg-white' />
@@ -50,8 +42,6 @@ const Navbar = () => {
             <span className="sm:block hidden"> | &nbsp; Porfolio</span>
           </p>
         </span>
-        {/* </Link> */}
-
         <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li

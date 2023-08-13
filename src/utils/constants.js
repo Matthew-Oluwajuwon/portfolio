@@ -1,6 +1,12 @@
 import xpress from "../images/company/xpress.svg";
 import findworka from "../images/company/findworka.png";
+import mobile from "../images/mobile.png";
 import uba from "../images/company/uba.png";
+import web from "../images/web.png";
+import creator from "../images/creator.png";
+import backend from "../images/backend.png";
+import udemy from "../images/udemy.png";
+import udemyCert from "../images/udemy-cert.jpg"
 
 export const experiences = [
   {
@@ -83,3 +89,32 @@ export const education = [
       },
   ];
   
+  export const services = [
+    {
+      title: "Web Developer",
+      icon: web,
+    },
+    {
+      title: "ReactJS Developer",
+      icon: mobile,
+    },
+    {
+      title: "NodeJS Developer",
+      icon: backend,
+    },
+    {
+      title: "React Native Developer",
+      icon: creator,
+    },
+  ];
+  
+  export const certification = [
+    {
+      name: "Advance React for Enterprise: React for Senior Engineers",
+      image: udemyCert,
+      issuingOrganization: "Udemy",
+      url: "https://www.udemy.com/certificate/UC-2752a1a5-e733-47df-8258-a9a96f1cb87c/",
+      date: "Feb 2023",
+      logo: udemy,
+    },
+  ];
